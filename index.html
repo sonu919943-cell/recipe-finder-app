@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Recipe Finder | Indian Favorites</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  
+  <button id="theme-toggle" title="Switch dark/light mode">🌙</button>
+ 
+  
+  <div id="loginModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="logo-svg"></span>
+      <h2>Welcome to Recipe Finder!</h2>
+      <p>Login/Signup to save your favourite recipes.</p>
+      <button id="doLogin">Login / Sign-up</button>
+      <button id="skipLogin" class="alt-btn">Skip for now</button>
+    </div>
+  </div>
+
+
+  <header>
+    <span class="logo-svg"></span>
+    <h1>Recipe Finder</h1>
+    <div class="subtitle">Discover the best Indian meals to try, save, and cook!</div>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="🔎 Search Indian recipes…" autocomplete="off" />
+      <button id="searchBtn">Search</button>
+    </div>
+    <nav>
+      <a href="#" id="homeLink">Home</a>
+      <a href="#" id="catLink">Categories</a>
+      <a href="#" id="favLink">Favourites</a>
+      <a href="login.html" id="loginLink">Login/Signup</a>
+    </nav>
+  </header>
+  <main>
+    <div id="categories" class="category-grid"></div>
+    <h2 class="section-title">Popular Indian Recipes</h2>
+    <div id="recipes" class="grid"></div>
+    <div id="popup" class="hidden"></div>
+  </main>
+  <footer>
+    © 2025 Recipe Finder
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
